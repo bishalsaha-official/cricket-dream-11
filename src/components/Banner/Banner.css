@@ -1,0 +1,31 @@
+.banner{
+    background: url('../../assets/images/bg-shadow.png'), rgb(0, 0, 0);
+    padding: 60px 0;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.banner-title{
+    font-size: 40px;
+    color: #fff;
+}
+
+.banner-sub-title{
+    color: #FFFFFFB3;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.banner-btn{
+    background-color: #E7FE29;
+    padding: 15px 20px;
+    border-radius: 15px;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.banner-btn:hover{
+    cursor: pointer;
+}

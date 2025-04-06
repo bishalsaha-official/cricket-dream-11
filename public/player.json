@@ -4,7 +4,7 @@
         "player_name": "Sachin Tendulkar",
         "player_role": "Right-handed batsman",
         "country": "India",
-        "price": 3000000,
+        "price": 300000,
         "cover_image": "https://example.com/images/sachin_tendulkar.jpg",
         "description": "Known as the 'Master Blaster', Sachin is widely regarded as one of the greatest batsmen in the history of cricket."
     },
@@ -13,7 +13,7 @@
         "player_name": "Virat Kohli",
         "player_role": "Right-handed batsman",
         "country": "India",
-        "price": 2700000,
+        "price": 270000,
         "cover_image": "https://example.com/images/virat_kohli.jpg",
         "description": "Modern-day great and run-machine, Kohli is known for his intensity, fitness, and hunger to win."
     },
@@ -22,7 +22,7 @@
         "player_name": "Jacques Kallis",
         "player_role": "Right-handed batsman, right-arm fast bowler",
         "country": "South Africa",
-        "price": 2800000,
+        "price": 280000,
         "cover_image": "https://example.com/images/jacques_kallis.jpg",
         "description": "A complete all-rounder, Kallis scored runs and took wickets consistently for over a decade."
     },
@@ -31,7 +31,7 @@
         "player_name": "Muttiah Muralitharan",
         "player_role": "Right-arm off-spin bowler",
         "country": "Sri Lanka",
-        "price": 2700000,
+        "price": 270000,
         "cover_image": "https://example.com/images/muttiah_muralitharan.jpg",
         "description": "With 800 Test wickets, Murali is the most successful bowler in Test cricket history."
     },
@@ -40,7 +40,7 @@
         "player_name": "Shane Warne",
         "player_role": "Right-arm leg-spin bowler",
         "country": "Australia",
-        "price": 2700000,
+        "price": 270000,
         "cover_image": "https://example.com/images/shane_warne.jpg",
         "description": "One of the greatest leg-spinners ever, known for his magical deliveries and sharp cricketing brain."
     },
@@ -49,7 +49,7 @@
         "player_name": "Wasim Akram",
         "player_role": "Left-arm fast bowler",
         "country": "Pakistan",
-        "price": 2600000,
+        "price": 260000,
         "cover_image": "https://example.com/images/wasim_akram.jpg",
         "description": "A master of swing, Akram was lethal with both new and old balls and a game-changer for Pakistan."
     },
@@ -58,7 +58,7 @@
         "player_name": "Ricky Ponting",
         "player_role": "Right-handed batsman",
         "country": "Australia",
-        "price": 2500000,
+        "price": 250000,
         "cover_image": "https://example.com/images/ricky_ponting.jpg",
         "description": "One of the most successful captains and a prolific batsman with a commanding presence at the crease."
     },
@@ -67,7 +67,7 @@
         "player_name": "Kumar Sangakkara",
         "player_role": "Left-handed batsman",
         "country": "Sri Lanka",
-        "price": 2450000,
+        "price": 245000,
         "cover_image": "https://example.com/images/kumar_sangakkara.jpg",
         "description": "Elegant left-hander and legendary wicketkeeper-batsman with a stellar career across all formats."
     },
@@ -76,7 +76,7 @@
         "player_name": "MS Dhoni",
         "player_role": "Right-handed batsman, wicketkeeper",
         "country": "India",
-        "price": 2600000,
+        "price": 260000,
         "cover_image": "https://example.com/images/ms_dhoni.jpg",
         "description": "One of the greatest finishers and captains, Dhoni led India to multiple ICC trophies with cool composure."
     },
@@ -85,7 +85,7 @@
         "player_name": "Glenn McGrath",
         "player_role": "Right-arm fast bowler",
         "country": "Australia",
-        "price": 2500000,
+        "price": 250000,
         "cover_image": "https://example.com/images/glenn_mcgrath.jpg",
         "description": "A line-and-length specialist, McGrath was a nightmare for batsmen and an integral part of Australia’s dominance."
     },
@@ -94,7 +94,7 @@
         "player_name": "AB de Villiers",
         "player_role": "Right-handed batsman",
         "country": "South Africa",
-        "price": 2400000,
+        "price": 240000,
         "cover_image": "https://example.com/images/ab_de_villiers.jpg",
         "description": "Mr. 360, AB revolutionized modern-day batting with his innovative strokeplay and athleticism."
     },
@@ -103,7 +103,7 @@
         "player_name": "Brian Lara",
         "player_role": "Left-handed batsman",
         "country": "West Indies",
-        "price": 2900000,
+        "price": 290000,
         "cover_image": "https://example.com/images/brian_lara.jpg",
         "description": "Holder of the highest individual score in a Test innings (400*), Lara was known for his flair and dominance."
     }

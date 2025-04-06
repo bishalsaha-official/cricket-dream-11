@@ -4,7 +4,7 @@ import { BsCoin } from "react-icons/bs";
 import logo from '../../assets/images/logo.png'
 
 
-const Header = () => {
+const Header = ({credits}) => {
     return (
         <nav className='nav'>
             <img src={logo} alt="" />
@@ -14,7 +14,7 @@ const Header = () => {
                     <li><a href="">Fixture</a></li>
                     <li><a href="">Teams</a></li>
                     <li><a href="">Schedule</a></li>
-                    <li><button className='header-btn'>0 coin  <span className='icon'><BsCoin></BsCoin></span></button></li>
+                    <li><button className='header-btn'>$ {credits} USD  <span className='icon'><BsCoin></BsCoin></span></button></li>
                 </ul>
             </div>
         </nav>
