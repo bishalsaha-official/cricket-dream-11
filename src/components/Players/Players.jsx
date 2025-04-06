@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Player from "../Player/Player";
 import './Players.css'
 
-const Players = () => {
+const Players = ({handleSelectPlayers}) => {
     const [players, setPlayers] = useState([])
 
     useEffect(()=>{
@@ -14,7 +14,7 @@ const Players = () => {
     return (
         <div className="players-container">
             {
-                players.map(player => <Player key={player.id} player={player}></Player>)
+                players.map(player => <Player key={player.id} player={player} handleSelectPlayers={handleSelectPlayers}></Player>)
             }
         </div>
     );

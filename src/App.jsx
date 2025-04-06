@@ -8,21 +8,31 @@ import AvailablePlayer from './components/AvailablePlayer/AvailablePlayer';
 function App() {
   const [credits, setCredits] = useState(0)
   const [active, setActive] = useState(true)
+  const [selectPlayers, setSelectplayers] = useState([])
 
-  const handleCredits = ()=>{
+  const handleCredits = () => {
     toast("Succesfully get Free Credited")
     const newCredits = credits + 15000000;
     setCredits(newCredits)
   }
 
-  const handleActiveBtn = (status) =>{
-    if(status == true){
+  const handleActiveBtn = (status) => {
+    if (status == true) {
       setActive(true)
-      console.log("true")
     }
-    else{
+    else {
       setActive(false)
-      console.log('false')
+    }
+  }
+
+  const handleSelectPlayers = (select) => {
+    const isExist = selectPlayers.find(p => p.id == select.id)
+    if (isExist) {
+      toast("Allready select this player")
+    }
+    else {
+      const newPlayers = [...selectPlayers, select]
+      setSelectplayers(newPlayers)
     }
   }
 
@@ -32,7 +42,12 @@ function App() {
         <ToastContainer></ToastContainer>
         <Header credits={credits}></Header>
         <Banner handleCredits={handleCredits}></Banner>
-        <AvailablePlayer handleActiveBtn={handleActiveBtn} active={active}></AvailablePlayer>
+        <AvailablePlayer
+          handleActiveBtn={handleActiveBtn}
+          active={active}
+          handleSelectPlayers={handleSelectPlayers}
+          selectPlayers={selectPlayers}
+        ></AvailablePlayer>
       </div>
     </>
   )

@@ -3,8 +3,8 @@ import './Player.css'
 import { FaUser, FaFlag } from "react-icons/fa";
 
 
-const Player = ({player}) => {
-    const {player_name, player_role, country, price, cover_image} = player;
+const Player = ({player, handleSelectPlayers}) => {
+    const {id, player_name, player_role, country, price, cover_image} = player;
     return (
         <div className='player-container'>
             <img src={cover_image} alt="" />
@@ -12,7 +12,7 @@ const Player = ({player}) => {
             <p><FaFlag></FaFlag> {country}</p>
             <p>Role: {player_role}</p>
             <p>Price: {price}</p>
-            <button className='btn'>Choose Player</button>
+            <button onClick={()=> {handleSelectPlayers(player)}} className='btn'>Choose Player</button>
         </div>
     );
 };

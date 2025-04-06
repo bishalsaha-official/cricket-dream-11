@@ -1,9 +1,15 @@
 import React from 'react';
 
-const SelectedPlayer = () => {
+const SelectedPlayer = ({selectPlayers}) => {
+    console.log(selectPlayers)
     return (
         <div>
-            <h2>select player</h2>
+            {
+                selectPlayers.map((player) => <div>
+                    <h2>{player.player_name}</h2>
+                    <p>{player.player_role}</p>
+                </div>)
+            }
         </div>
     );
 };
