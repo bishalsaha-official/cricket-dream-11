@@ -1,0 +1,30 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 14px;
+}
+
+.nav-item li a{
+    text-decoration: none;
+    color: #131313B3;
+}
+
+.header-btn{
+    background-color: #fff;
+    padding: 10px 15px;
+    border: 1px solid rgba(19, 19, 19, 0.1);
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.icon{
+    color: #F39E09;
+}
+
