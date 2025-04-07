@@ -14,7 +14,7 @@ function App() {
 
   const handleCredits = () => {
     toast("Succesfully get Free Credited")
-    const newCredits = credits + 15000000;
+    const newCredits = credits + 1500000;
     setCredits(newCredits)
   }
 
@@ -27,20 +27,37 @@ function App() {
     }
   }
 
+  
   const handleSelectPlayers = (select) => {
     const isExist = selectPlayers.find(p => p.id == select.id)
     if (isExist) {
-      toast("Allready select this player")
+      toast("Allready selected This Player")
     }
     else {
-      const newPlayers = [...selectPlayers, select]
-      setSelectplayers(newPlayers)
+      if (selectPlayers.length < 6) {
+        const newPlayers = [...selectPlayers, select]
+        setSelectplayers(newPlayers)
+
+        if (credits >= select.price) {
+          const newBalance = credits - select.price;
+          setCredits(newBalance)
+        }
+        else {
+          toast("Not Enough Balance")
+        }
+      }
+      else {
+        toast("Six Player Allready Added")
+      }
     }
   }
 
-  const handleRemovePlayer = (id) =>{
+  const handleRemovePlayer = (id, price) => {
     const remainPlayer = selectPlayers.filter(p => p.id != id)
     setSelectplayers(remainPlayer)
+    toast("Successfully Removed Player")
+    const newRemainBalance = credits + price;
+    setCredits(newRemainBalance)
   }
 
   return (

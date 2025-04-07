@@ -14,7 +14,7 @@ const SelectedPlayer = ({ selectPlayers, handleActiveBtn, handleRemovePlayer }) 
                             <p>{player.player_role}</p>
                         </div>
                     </div>
-                    <button onClick={()=> handleRemovePlayer(player.id)} className='remove-btn btn'><MdDelete></MdDelete></button>
+                    <button onClick={()=> handleRemovePlayer(player.id, player.price)} className='remove-btn btn'><MdDelete></MdDelete></button>
                 </div>)
             }
             <button onClick={()=> handleActiveBtn(true)} className='btn add-more-btn'>Add more</button>
