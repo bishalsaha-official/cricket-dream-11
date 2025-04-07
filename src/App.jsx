@@ -4,7 +4,8 @@ import Banner from './components/Banner/Banner';
 import Header from "./components/Header/Header"
 import { ToastContainer, toast } from 'react-toastify';
 import AvailablePlayer from './components/AvailablePlayer/AvailablePlayer';
-import Newslater from './Newslater/Newslater';
+import Newslater from './components/Newslater/Newslater';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const [credits, setCredits] = useState(0)
@@ -57,6 +58,7 @@ function App() {
         ></AvailablePlayer>
         <Newslater></Newslater>
       </div>
+      <Footer></Footer>
     </>
   )
 }

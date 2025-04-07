@@ -1,0 +1,41 @@
+.footer{
+    padding: 50px 0 0 0;
+    background-color: #06091A;
+    color: #fff;
+    margin-top: 60px;
+}
+
+.footer-img{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.footer-description{
+    width: 300px;
+}
+
+.footer-description,
+.social-link,
+.newslater-description,
+.copyright{
+    color: #FFFFFF99;
+    line-height: 30px;
+}
+
+.footer-newslater-field{
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.copyright{
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 30px 0;
+}
