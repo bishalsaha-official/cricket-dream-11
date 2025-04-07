@@ -4,6 +4,7 @@ import Banner from './components/Banner/Banner';
 import Header from "./components/Header/Header"
 import { ToastContainer, toast } from 'react-toastify';
 import AvailablePlayer from './components/AvailablePlayer/AvailablePlayer';
+import Newslater from './Newslater/Newslater';
 
 function App() {
   const [credits, setCredits] = useState(0)
@@ -36,6 +37,11 @@ function App() {
     }
   }
 
+  const handleRemovePlayer = (id) =>{
+    const remainPlayer = selectPlayers.filter(p => p.id != id)
+    setSelectplayers(remainPlayer)
+  }
+
   return (
     <>
       <div className="container">
@@ -47,7 +53,9 @@ function App() {
           active={active}
           handleSelectPlayers={handleSelectPlayers}
           selectPlayers={selectPlayers}
+          handleRemovePlayer={handleRemovePlayer}
         ></AvailablePlayer>
+        <Newslater></Newslater>
       </div>
     </>
   )

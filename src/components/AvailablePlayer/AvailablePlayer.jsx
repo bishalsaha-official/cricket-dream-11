@@ -2,7 +2,7 @@ import Players from '../Players/Players';
 import SelectedPlayer from '../SelectedPlayer/SelectedPlayer';
 import './AvailablePlayer.css'
 
-const AvailablePlayer = ({handleActiveBtn, active, handleSelectPlayers, selectPlayers}) => {
+const AvailablePlayer = ({handleActiveBtn, active, handleSelectPlayers, selectPlayers, handleRemovePlayer}) => {
     return (
         <div>
             <div className="available-player">
@@ -14,7 +14,7 @@ const AvailablePlayer = ({handleActiveBtn, active, handleSelectPlayers, selectPl
                 </div>
             </div>
             {
-                (active) ? <Players handleSelectPlayers={handleSelectPlayers}></Players> : <SelectedPlayer selectPlayers={selectPlayers} handleActiveBtn={handleActiveBtn}></SelectedPlayer>
+                (active) ? <Players handleSelectPlayers={handleSelectPlayers}></Players> : <SelectedPlayer selectPlayers={selectPlayers} handleActiveBtn={handleActiveBtn} handleRemovePlayer={handleRemovePlayer}></SelectedPlayer>
             }
             
             

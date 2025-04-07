@@ -2,11 +2,11 @@ import React from 'react';
 import './SelectedPlayer.css'
 import { MdDelete } from "react-icons/md";
 
-const SelectedPlayer = ({ selectPlayers, handleActiveBtn }) => {
+const SelectedPlayer = ({ selectPlayers, handleActiveBtn, handleRemovePlayer }) => {
     return (
         <div>
             {
-                selectPlayers.map((player) => <div className='select-player-container'>
+                selectPlayers.map((player, idx) => <div key={idx} className='select-player-container'>
                     <div className='select-player-item'>
                         <img src={player.cover_image} alt="" />
                         <div>
@@ -14,7 +14,7 @@ const SelectedPlayer = ({ selectPlayers, handleActiveBtn }) => {
                             <p>{player.player_role}</p>
                         </div>
                     </div>
-                    <button className='remove-btn btn'><MdDelete></MdDelete></button>
+                    <button onClick={()=> handleRemovePlayer(player.id)} className='remove-btn btn'><MdDelete></MdDelete></button>
                 </div>)
             }
             <button onClick={()=> handleActiveBtn(true)} className='btn add-more-btn'>Add more</button>
