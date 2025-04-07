@@ -14,7 +14,7 @@ const AvailablePlayer = ({handleActiveBtn, active, handleSelectPlayers, selectPl
                 </div>
             </div>
             {
-                (active) ? <Players handleSelectPlayers={handleSelectPlayers}></Players> : <SelectedPlayer selectPlayers={selectPlayers}></SelectedPlayer>
+                (active) ? <Players handleSelectPlayers={handleSelectPlayers}></Players> : <SelectedPlayer selectPlayers={selectPlayers} handleActiveBtn={handleActiveBtn}></SelectedPlayer>
             }
             
             
