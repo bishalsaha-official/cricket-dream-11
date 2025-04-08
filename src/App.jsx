@@ -27,28 +27,23 @@ function App() {
     }
   }
 
-  
   const handleSelectPlayers = (select) => {
     const isExist = selectPlayers.find(p => p.id == select.id)
     if (isExist) {
       toast("Allready selected This Player")
     }
-    else {
+    else if (credits > select.price) {
       if (selectPlayers.length < 6) {
         const newPlayers = [...selectPlayers, select]
         setSelectplayers(newPlayers)
-
-        if (credits >= select.price) {
-          const newBalance = credits - select.price;
-          setCredits(newBalance)
-        }
-        else {
-          toast("Not Enough Balance")
-        }
+        const newBalance = credits - select.price;
+        setCredits(newBalance)
+      } else {
+        toast("Allready Have six player")
       }
-      else {
-        toast("Six Player Allready Added")
-      }
+    }
+    else {
+      toast("Not enough balance")
     }
   }
 
